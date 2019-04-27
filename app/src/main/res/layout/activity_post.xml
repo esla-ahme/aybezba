@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+    <ImageView
+        android:id="@+id/imagePost"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_mms_black_24dp"
+        android:layout_gravity="center"
+        android:onClick="addImg"
+        />
+    <EditText
+        android:id="@+id/postTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_margin="4dp"
+        android:hint="Title"
+
+
+        />
+    <EditText
+        android:id="@+id/postContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:maxHeight="300dp"
+        android:padding="2dp"
+        android:layout_margin="4dp"
+        android:hint="content"
+
+        />
+    <Button
+        android:id="@+id/botosn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="POST"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:onClick="addNewPost"
+        />
+
+    <Button
+        android:onClick="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:text="DONE" />
+
+</LinearLayout>
